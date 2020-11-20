@@ -5,7 +5,6 @@
     #  url definido no arquivo hooks.rb
     #  set_url usada caso queira que abra direto em uma pagina expecifica do site. por exemplo '/unidades
     set_url '/'
-     element :link_unidade, '#button-title-desktop-header', text: 'Unidades'
      element :search_unidade, '#input-search-field'
      element :link_unidade_df, '.typographycomponentstyle__H3-sc-1oox73n-3.caOpMn', text: 'Brasília' 
      element :filtro_facilidade, '#checkoox-select-facilities'

@@ -1,9 +1,8 @@
 Dado("que acesse a pagina de unidades") do
-  @unidade.link_unidade.click
+  @home.link_unidade.click
 end
 
 Quando("seleciono algumas opcões de facilidade") do 
-  sleep 5
   @unidade.filtro_facilidade.click
   @unidade.selecionar_facilities
   @unidade.ver_detalhes.click

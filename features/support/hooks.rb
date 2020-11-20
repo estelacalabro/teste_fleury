@@ -2,7 +2,7 @@ require 'report_builder'
 
 Before do |scenario|
     @unidade = UnidadeScreen.new
-
+    @home = HomeScreen.new
 
     visit 'https://www.fleury.com.br'
     if ENV['BROWSER'].eql? 'chrome-headless'

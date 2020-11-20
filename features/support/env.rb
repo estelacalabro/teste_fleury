@@ -1,12 +1,12 @@
-require 'pry'
 require 'capybara'
 require 'capybara/cucumber'
 require 'capybara/rspec'
-require 'site_prism'
-require 'rspec'
 require 'capybara/dsl'
-require 'selenium-webdriver'
+require 'pry'
 require 'report_builder'
+require 'rspec'
+require 'site_prism'
+require 'selenium-webdriver'
 require_relative File.expand_path('../base_screen.rb', __dir__)
 require_relative File.expand_path('../modules/pesquisa_unidade_module.rb', __dir__)
 
