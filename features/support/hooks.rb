@@ -5,12 +5,10 @@ Before do |scenario|
     @home = HomeScreen.new
 
     visit 'https://www.fleury.com.br'
-    if ENV['BROWSER'].eql? 'chrome-headless'
         Capybara.current_session.current_window.resize_to(1366, 768)
-    end
 end
 
-#Configuração para screenshot
+#Esta configuração é para que tire print da tela com sucesso ou com falha
 After do |scenario|
     sufix = ('error' if scenario.failed?) || 'sucess'
     name = scenario.name.tr('', '_').downcase
@@ -18,7 +16,7 @@ After do |scenario|
     embed("images/#{sufix}-#{name}.png", 'image/png', 'Screenshot')
 end 
 
-#Configuração de report
+#Esta configuração é para gerar um report com grafico e que de maior visibilidade dos testes
 at_exit do
     ReportBuilder.configure do |config|
         config.input_path = 'logs/report.json'

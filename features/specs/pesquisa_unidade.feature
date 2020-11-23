@@ -6,4 +6,4 @@ Funcionalidade: Escolher alguns tipos de facilidade e escolher a unidade dispon�
     Cenário: Filtro por facilidade
         Dado que acesse a pagina de unidades
         Quando seleciono algumas opcões de facilidade 
-        Então devo ver a unidade 'República do Líbano I'
+        Então devo ver a unidade 'Shopping Anália Franco'

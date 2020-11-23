@@ -1,12 +1,7 @@
- class UnidadeScreen < SitePrism::Page
+class UnidadeScreen < SitePrism::Page
+    include UnidadeModule
 
-     include UnidadeModule
-
-    #  url definido no arquivo hooks.rb
-    #  set_url usada caso queira que abra direto em uma pagina expecifica do site. por exemplo '/unidades
     set_url '/'
-     element :search_unidade, '#input-search-field'
-     element :link_unidade_df, '.typographycomponentstyle__H3-sc-1oox73n-3.caOpMn', text: 'Brasília' 
-     element :filtro_facilidade, '#checkoox-select-facilities'
-     element :ver_detalhes, '#button-see-on-map-2-republica-do-libano-i'     
- end
+     element :selecionar_facilidade, '#checkoox-select-facilities'
+     elements :ver_detalhes, '.typographycomponentstyle__H3-sc-1oox73n-3.caOpMn', text: 'Shopping Anália Franco'
+end
